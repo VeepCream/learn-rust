@@ -16,9 +16,8 @@ fn bmi_calculator(weight: f64, height: f64) -> String {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let mut sum = String::new();
 
-    sum = bmi_calculator(args[1].parse().unwrap(), args[2].parse().unwrap());
+    let sum = bmi_calculator(args[1].parse().unwrap(), args[2].parse().unwrap());
     
     println!("Sum = {}", sum);
 }
